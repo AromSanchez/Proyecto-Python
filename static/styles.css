@@ -115,3 +115,15 @@ h1 {
 .separator {
     margin-bottom: 20px; /* Ajustar según sea necesario */
 }
+
+button[type="submit"] {
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.8;
+}
