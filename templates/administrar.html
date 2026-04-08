@@ -27,14 +27,14 @@
             <tbody>
                 {% for persona in registros %}
                 <tr>
-                    <td>{{ persona[0] }}</td>
-                    <td>{{ persona[1] }}</td>
-                    <td>{{ persona[2] }}</td>
-                    <td>{{ persona[3] }}</td>
-                    <td>{{ persona[4] }}</td>
+                    <td>{{ persona[1] }}</td> <!-- dni -->
+                    <td>{{ persona[2] }}</td> <!-- nombre -->
+                    <td>{{ persona[3] }}</td> <!-- apellido -->
+                    <td>{{ persona[4] }}</td> <!-- direccion -->
+                    <td>{{ persona[5] }}</td> <!-- telefono -->
                     <td>
-                        <form action="/eliminar/{{ persona[0] }}" method="post" onsubmit="return confirm('¿Seguro que deseas eliminar este registro?');">
-                            <button type="submit" style="background-color:#dc3545;">Eliminar</button>
+                        <form action="/eliminar/{{ persona[1] }}" method="post" onsubmit="return confirm('¿Seguro que deseas eliminar este registro?');">
+                            <button type="submit" style="background-color:#dc3545; color:#fff; border:none; padding:5px 10px; border-radius:3px;">Eliminar</button>
                         </form>
                     </td>
                 </tr>
